@@ -1,0 +1,25 @@
+[package]
+name = "eyecite"
+version = "0.0.0"
+edition = "2021"
+license-file = "LICENSE"
+description = "An unoffical port of the freelawproject's eyecite."
+readme = "README.rst"
+repository = "https://github.com/jakeswenson/eyecite"
+
+[dependencies]
+daachorse = "0.4.1"
+thiserror = "1.0"
+regex = "1"
+const_format = "0.2.22"
+lazy_static = "1"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false # Disable features which are enabled by default
+features = ["precommit-hook", "prepush-hook", "run-cargo-test", "run-cargo-clippy", "run-cargo-fmt"]
+
+[dependencies.reporters-db]
+version = "0.0.5"
+path = "../reporters-db"
+

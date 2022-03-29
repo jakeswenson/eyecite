@@ -165,3 +165,9 @@ dmypy.json
 # default cache used by tests
 .test_cache/
 /.idea/
+
+
+# Added by cargo
+
+/target
+Cargo.lock
